@@ -1,0 +1,1 @@
+{"version":3,"sources":["file_manager.js","global.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;ACLA","file":"custom.js","sourcesContent":["$( document ).ready(function() {\n\n    $('.top').find('.fa-cloud-upload').addClass('fa-cloud-upload-alt').removeClass('fa-cloud-upload');\n\n    $(\"#file-manager-modal\").removeClass('fade modal-scroll');\n});",""]}

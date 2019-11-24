@@ -1,0 +1,143 @@
+.s_side-menu {
+
+  ul.page-sidebar-menu-closed.page-sidebar-menu  {
+    z-index: 5;
+    position: fixed;
+    > li.active > a,
+    > li.active.open > a {
+      background-color: #272c30;
+      border: none;
+
+      &:hover {
+        background-color: #272c30;
+      }
+    }
+
+    li.nav-item:hover {
+      a > i {
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+  }
+
+  ul.page-sidebar-menu-closed.page-sidebar-menu.bottom li.nav-item:hover {
+    width: 54px !important;
+    box-shadow: none !important;
+
+    a.nav-link > span.title {
+      display: none !important;
+    }
+  }
+
+  .page-sidebar {
+    background-color: #272c30;
+    position: fixed;
+    z-index: 5;
+  }
+  ul.page-sidebar-menu {
+    background-color: #272c30;
+
+    .sub-menu {
+    }
+
+    > li > a {
+      border: none;
+      font-weight: 500;
+
+      &:hover {
+        background-color: #272c30;
+      }
+    }
+
+    > li.active > a,
+    > li.active.open > a {
+      background-color: #2a61c6;
+      border: none;
+
+      &:hover {
+        background-color: #2a61c6;
+      }
+
+      > i[class^="icon-"] {
+        color: #fff;
+      }
+    }
+
+    li > a > i[class^="icon-"] {
+      color: #5f727f;
+      font-size: 18px;
+      margin-left: 0;
+      //left: 2px;
+    }
+
+    li {
+      &.active {
+        a {
+          i {
+            color: #fff;
+          }
+        }
+      }
+      &:hover {
+        & > a {
+          & > i {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+
+  .page-sidebar-menu.bottom {
+    position: absolute;
+    bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    .navbar-collapse.collapse {
+      min-height: calc(100vh - 68px) !important;
+    }
+  }
+}
+
+.page-sidebar {
+  .page-sidebar-menu {
+    & > li {
+      transition: all .2s ease-in-out;
+      & > a {
+        color: #dce2e6;
+
+        & > i {
+          color: #5f727f;
+          font-size: 18px;
+          margin-left: 0;
+        }
+      }
+
+      &:hover {
+        & > a {
+          background: #37424a;
+          color: #fafbfb;
+
+          & > i {
+            color: #5f727f;
+          }
+        }
+      }
+    }
+    .sub-menu {
+      border-radius: 0 0 4px 4px;
+
+      li {
+        box-shadow: 5px 5px rgba(48, 48, 48, 0.2);
+        &:hover {
+          a {
+
+          }
+        }
+      }
+    }
+  }
+}

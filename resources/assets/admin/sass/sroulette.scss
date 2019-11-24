@@ -1,0 +1,82 @@
+body.roulette-main-layout {
+  background-color: #272c30;
+
+  //No top nav section:
+  .page-content {
+    margin-top: -68px !important;
+    min-height: 100vh !important;
+  }
+
+  .roulette_page-content {
+    h3.page-title {
+      background: #fff;
+      margin-top: -25px;
+      margin-left: -20px;
+      margin-right: -20px;
+      padding: 17px 20px;
+      color: #000;
+      font-weight: 500;
+      font-size: 20px;
+      border-bottom: 1px solid #E4E8EB;
+    }
+  }
+  .bootstrap-switch {
+    .bootstrap-switch-handle-on {
+      &.bootstrap-switch-success {
+        color: #fff;
+        background: #ff6784;
+        &:hover {
+          background-color: #ff7b94;
+          border-color: #fb7f97;
+        }
+      }
+    }
+    .bootstrap-switch-handle-off {
+      &.bootstrap-switch-success {
+        color: #fff;
+        background: #ff6784;
+        &:hover {
+          background-color: #ff7b94;
+          border-color: #fb7f97;
+        }
+      }
+    }
+  }
+
+  .nav-tabs {
+    & > li {
+      & > a {
+        color: #fb4165;
+      }
+      &.active > a {
+        color: #555555;
+      }
+    }
+  }
+
+  .page-sidebar .page-sidebar-menu.page-sidebar-menu-compact > li > a > i,
+  .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu.page-sidebar-menu-compact > li > a > i {
+    text-align: center;
+  }
+
+  .page-header.navbar {
+    @media (max-width: 767px) {
+      background: none !important;
+      box-shadow: none !important;
+    }
+
+    @media (max-width: 991px) {
+      box-shadow: none !important;
+    }
+  }
+
+  .menu-toggler.responsive-toggler {
+    @media (max-width: 991px) {
+      font-size: 0;
+    }
+  }
+}
+
+.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed > li > a {
+  padding-left: 16px !important;
+}
